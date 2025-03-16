@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+  <head>
+    <!-- 添加 MathJax 的 CDN 链接 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']], // 行内公式的标识符
+          displayMath: [['$$', '$$'], ['\\[', '\\]']], // 块级公式的标识符
+          processEscapes: true, // 处理转义字符
+          processEnvironments: true // 处理环境
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          ignoreHtmlClass: 'tex2jax_ignore',
+          processHtmlClass: 'tex2jax_process'
+        }
+      };
+    </script>
+    <style>
+      .math-container {
+        overflow-x: auto; /* 允许水平滚动 */
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 10px 0;
+      }
+      .math-container .mjx-chtml {
+        white-space: nowrap; /* 防止公式换行 */
+      }
+    </style>
+  </head>
   <body>
     {% include nav.html %}
 
@@ -29,6 +60,5 @@
     <footer class="footer">
       {% include footer.html %}
     </footer>
-
-
+  </div>
 </html>
