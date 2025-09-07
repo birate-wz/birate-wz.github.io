@@ -14,11 +14,12 @@ navigation:
 
 paginate: 8
 
+permalink: /:categories/:title/
 excerpt_separator: <!-- more -->
 
 footer-links:
   zhihu: 
-  email: 
+  email: birate_wz@163.com
   facebook:
   github: birate-wz
   rss: # just type anything here for a working RSS icon
