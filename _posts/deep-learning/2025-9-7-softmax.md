@@ -8,7 +8,6 @@ author: zhw
 mathjax: true
 ---
 
-# 1. softmax 回归
 
 ## 1.1 网络架构
 
