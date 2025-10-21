@@ -8,8 +8,6 @@ author: zhw
 mathjax: true
 ---
 
-# 内存池核心介绍
-
 废话不多说，show you code. 
 
 我实现了两套内存池，一个是固定大小的内存池，一个是多重不同大小的内存池。
